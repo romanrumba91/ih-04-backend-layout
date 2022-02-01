@@ -5,7 +5,13 @@ const router		= express.Router()
 
 // 2. RUTEO
 router.get("/", (req, res) => {
-	res.send("hola mundo")
+	res.render("index")
+})
+router.get("/players", (req, res) => {
+	res.render("players")
+})
+router.get("/teams", (req, res) => {
+	res.render("teams")
 })
 
 // 3. EXPORTACIÓN
